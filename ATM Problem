@@ -1,0 +1,20 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+   int x;// So first of all i have used two variables to take values of x and y
+   float y, balance; // another variable to store the balance
+   cin >> x >> y;
+   if (x%5==0 && y >=(x+0.5))  
+   {
+       balance=y-x-0.50;  
+       cout <<fixed<<setprecision(2) << balance <<endl; 
+   }
+   else
+   {
+       cout <<fixed<<setprecision(2)<<y<<endl; 
+   }
+    return 0;
+}
