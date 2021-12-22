@@ -1,0 +1,36 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+ int t;
+ int counteven = 0,countodd = 0;
+ cin >>t;
+ for(int i=0;i<t;i++)
+ {
+     int n;
+     int even,odd;
+     cin >>n;
+     if(n % 2 == 0)
+     {
+         even = n;
+         counteven++;
+     }
+     else
+     {
+        odd = n;
+        countodd++;
+     }
+
+ }
+    if(counteven > countodd)
+     {
+         cout <<"READY FOR BATTLE"<<endl;
+     }
+     else
+     {
+         cout <<"NOT READY"<<endl;
+     }
+
+    return 0;
+}
